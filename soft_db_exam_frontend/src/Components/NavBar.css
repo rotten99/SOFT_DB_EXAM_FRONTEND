@@ -1,0 +1,91 @@
+/* src/Components/NavBar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1e1e1e;
+    padding: 8px 16px;
+    color: #fff;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 16px;
+    font-size: 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-title {
+    margin: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-right span {
+    margin-left: 16px;
+    font-size: 0.9rem;
+}
+/* src/Components/NavBar.css */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-logout {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.nav-logout:hover {
+    background: #fff;
+    color: #1e1e1e;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 60px;
+    background: var(--card);
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Always keep this in the dead‐center of the navbar */
+.nav-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;         /* clicks pass through to the h1 below */
+}
+
+/* Make the title itself clickable again */
+.nav-center .nav-title {
+    pointer-events: auto;
+    cursor: pointer;
+}

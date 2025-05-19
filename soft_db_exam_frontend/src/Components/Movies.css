@@ -1,0 +1,74 @@
+/* wrap the input + checkbox */
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+/* push the checkbox label text a bit */
+.smart-checkbox {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+.smart-checkbox input {
+    margin-right: 4px;
+}
+
+
+.movies-page {
+    max-width: 800px;
+    margin: 24px auto;
+    padding: 0 16px;
+    color: #eee;
+    font-family: Arial, sans-serif;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    background: #2e2e2e;
+    border: 1px solid #444;
+    border-radius: 4px;
+    color: #eee;
+}
+
+.movies-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.movies-table th,
+.movies-table td {
+    border: 1px solid #444;
+    padding: 8px;
+    text-align: left;
+}
+
+.movies-table th:hover {
+    background: #333;
+}
+
+.pagination {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pagination button {
+    padding: 8px 12px;
+    background: #555;
+    border: none;
+    border-radius: 4px;
+    color: #eee;
+    cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}

@@ -1,0 +1,149 @@
+/* Login.css */
+
+/* Color and theme variables */
+:root {
+    --bg:    #121212;
+    --card:  #1e1e1e;
+    --input: #2e2e2e;
+    --btn:   #2979ff;
+    --hover: #5393ff;
+    --text:  #eeeeee;
+    --error: #ff6b6b;
+    --info:  #6bff95;
+}
+
+/* Global reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Ensure the root element spans the full viewport */
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Arial, sans-serif;
+}
+
+/* Center the login container perfectly in the viewport */
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;   /* full viewport height */
+    width: 100vw;    /* full viewport width */
+    padding: 16px;
+}
+
+/* The card that holds the form */
+.login-container {
+    background: var(--card);
+    padding: 32px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 360px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Heading inside the card */
+.login-container h2 {
+    margin-bottom: 16px;
+}
+
+/* Form layout */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Inputs inside forms */
+.form input {
+    padding: 12px;
+    background: var(--input);
+    border: 1px solid #333;
+    border-radius: 4px;
+    color: var(--text);
+    font-size: 1rem;
+    width: 100%;
+}
+
+/* Buttons inside forms */
+.form button {
+    padding: 12px;
+    background: var(--btn);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.form button:hover {
+    background: var(--hover);
+}
+
+/* “Don’t have an account?” line */
+.switch {
+    margin-top: 16px;
+    font-size: 0.9rem;
+}
+
+.switch button {
+    background: transparent;
+    border: none;
+    color: var(--btn);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Feedback messages */
+.error {
+    color: var(--error);
+    margin-bottom: 12px;
+}
+
+.info {
+    color: var(--info);
+    margin-bottom: 12px;
+}
+
+/* Modal backdrop for registration */
+.modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+/* Modal dialog box */
+.modal {
+    background: var(--card);
+    padding: 24px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Close button in modal */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: var(--text);
+    cursor: pointer;
+}
