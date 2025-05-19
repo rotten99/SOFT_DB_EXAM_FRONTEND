@@ -1,6 +1,6 @@
 // src/Facades/WatchPartyFacade.js
 import axios from 'axios';
-const API = 'http://localhost:5199/api/watchparties';
+const API = 'http://localhost:5001/api/watchparties';
 
 export default {
     // fetch active (running now)

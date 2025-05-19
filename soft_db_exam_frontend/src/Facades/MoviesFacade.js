@@ -3,7 +3,7 @@ import axios from 'axios';
 
 // you can also pull this from an env var:
 // const API_BASE = process.env.REACT_APP_API_URL || 'http://localhost:5199';
-const API_BASE = 'http://localhost:5199';
+const API_BASE = 'http://localhost:5001';
 const MOVIES_ENDPOINT = `${API_BASE}/api/movies`;
 
 const movieFacade = {

@@ -1,7 +1,7 @@
 // src/Facades/UserFacade.js
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5199/api/auth';
+const API_BASE = 'http://localhost:5001/api/auth';
 
 const userFacade = {
     /**

@@ -1,7 +1,7 @@
 // src/Facades/WatchListFacade.js
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5199/api/watchlists';
+const API_BASE = 'http://localhost:5001/api/watchlists';
 
 const watchListFacade = {
     // 1) GET /api/watchlists
