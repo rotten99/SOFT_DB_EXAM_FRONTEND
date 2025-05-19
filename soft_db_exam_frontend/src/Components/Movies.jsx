@@ -10,8 +10,8 @@ export default function Movies() {
     const [faves,     setFaves]     = useState([]);     // favourite movieIds
     const [query,     setQuery]     = useState('');
     const [page,      setPage]      = useState(1);
-    const [sortCol,   setSortCol]   = useState('title');
-    const [sortDir,   setSortDir]   = useState('asc');
+    const [sortCol, setSortCol] = useState('vote_Average');
+    const [sortDir,   setSortDir]   = useState('desc');
     const [useSmart,  setUseSmart]  = useState(false);
     const pageSize = 20;
     const nav      = useNavigate();
