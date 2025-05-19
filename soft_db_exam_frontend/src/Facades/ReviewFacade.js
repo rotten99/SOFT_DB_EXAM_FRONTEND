@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5199/api/reviews';
+const API_BASE = 'http://localhost:5001/api/reviews';
 
 const reviewFacade = {
     /**

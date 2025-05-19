@@ -1,7 +1,7 @@
 // src/Facades/FavouriteFacade.js
 import axios from 'axios';
 
-const API_BASE = 'http://localhost:5199/api/favourites';
+const API_BASE = 'http://localhost:5001/api/favourites';
 
 const favouriteFacade = {
     // Fetch all favourite movies for a user
