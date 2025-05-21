@@ -82,7 +82,10 @@ export default function WatchList() {
     return (
         <div className="watchlist-detail card">
             <div className="detail-header">
-                <button onClick={() => nav(-1)} className="btn-back">← Back</button>
+                <button onClick={() => nav(-1)} className="bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600">
+                    ← Back
+                </button>
+
                 <h2>{watchList.name}</h2>
                 <button onClick={() => setShowAddModal(true)} className="btn-add">
                     + Add Movies
