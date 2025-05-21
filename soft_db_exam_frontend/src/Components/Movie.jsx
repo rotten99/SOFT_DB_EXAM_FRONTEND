@@ -55,7 +55,7 @@ export default function Movie() {
 
     return (
         <div className="movie-container">
-            <button className="back" onClick={() => nav(-1)}>← Back</button>
+            <button color={"grey"} className="back" onClick={() => nav(-1)}>← Back</button>
 
             <h2>
                 {movie.title} ({new Date(movie.release_Date).toLocaleDateString()})
